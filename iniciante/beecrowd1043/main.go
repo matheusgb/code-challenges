@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"sort"
 )
 
 func main() {
-	var A, B, C int
+	var A, B, C float64
 	fmt.Scan(&A, &B, &C)
-	arr := []int{A, B, C}
-	sort.Ints(arr)
-	fmt.Printf("%v\n%v\n%v\n\n%v\n%v\n%v\n", arr[0], arr[1], arr[2], A, B, C)
+	if A+B > C && A+C > B && B+C > A {
+		fmt.Printf("Perimetro = %.1f\n", A+B+C)
+	} else {
+		fmt.Printf("Area = %.1f\n", ((A+B)*C)/2)
+	}
 }
