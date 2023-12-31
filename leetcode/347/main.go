@@ -5,6 +5,7 @@ import (
 )
 
 // há solução melhor com o bucketsort https://leetcode.com/problems/top-k-frequent-elements/solutions/81602/java-o-n-solution-bucket-sort/
+// https://leetcode.com/problems/top-k-frequent-elements/solutions/1930575/hashmap/
 func topKFrequent(nums []int, k int) []int {
 	m := map[int]int{}
 	for _, n := range nums {
