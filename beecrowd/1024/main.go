@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	// resolvido mas não passa no beecrowd
+	// não aceito pelo avaliador do beecrowd
 	var A int
 	fmt.Scan(&A)
 
