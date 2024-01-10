@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	// não aceito pelo avaliador do beecrowd
 	var A, B string
 	for {
 		fmt.Scan(&A, &B)
